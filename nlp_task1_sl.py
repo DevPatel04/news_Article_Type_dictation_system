@@ -1,24 +1,12 @@
 import streamlit as st
 import pickle
-import sklearn
 
 # # Define or import the ToArrayTransformer class
-# class ToArrayTransformer:
-#     # Define the class as it was when the model was saved
-#     def transform(self, X):
-#         return X.toarray()
-
-
-from sklearn.base import BaseEstimator, TransformerMixin
-import numpy as np
-
-class ToArrayTransformer(BaseEstimator, TransformerMixin):
-    def transform(self, X, y=None):
-
+class ToArrayTransformer:
+    # Define the class as it was when the model was saved
+    def transform(self, X):
         return X.toarray()
-
-    def fit(self, X, y=None):
-        return self
+        
 # Load the pre-trained model
 filename = 'nlp.pkl'
 try:
