@@ -8,7 +8,7 @@ class ToArrayTransformer:
         return X.toarray()
         
 # Load the pre-trained model
-filename = './nlp.pkl'
+filename = './nlp_1.pkl'
 try:
     with open(filename, 'rb') as f:
         pickle_load = pickle.load(f)
