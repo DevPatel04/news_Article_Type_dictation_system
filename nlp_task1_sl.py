@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import sklearn
 
 # # Define or import the ToArrayTransformer class
 # class ToArrayTransformer:
