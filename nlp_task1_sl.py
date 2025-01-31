@@ -8,7 +8,7 @@ class ToArrayTransformer:
         return X.toarray()
         
 # Load the pre-trained model
-filename = 'nlp.pkl'
+filename = 'https://github.com/DevPatel04/news_Article_Type_dictation_system/blob/ae496e457107149ad4923fb4fc754b3eb7dd1007/nlp.pkl'
 try:
     with open(filename, 'rb') as f:
         pickle_load = pickle.load(f)
