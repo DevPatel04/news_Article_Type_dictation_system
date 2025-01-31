@@ -19,7 +19,7 @@ class ToArrayTransformer(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
         return self
 # Load the pre-trained model
-filename = '/home/dev/Desktop/traning at inexture/NLP/task1/nlp.pkl'
+filename = 'nlp.pkl'
 try:
     with open(filename, 'rb') as f:
         pickle_load = pickle.load(f)
